@@ -1,0 +1,21 @@
+@media screen and (max-width: 1000px) {
+    .people {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      list-style-type: none;
+      .person{
+        display: flex;
+        &__image{
+            width: 130px;
+            height: 130px;
+        }
+      }
+    }
+  }
+@media screen and (max-width: 600px) {
+    .people {
+      display:flex;
+      flex-wrap: wrap;
+    }
+  }
